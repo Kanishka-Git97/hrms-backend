@@ -23,6 +23,18 @@ export class Paycheck {
   @Prop({ required: true, trim: true })
   deduction: number;
 
+  @Prop({ required: true, trim: true })
+  installment: number;
+
+  @Prop({ required: true, trim: true })
+  others: number;
+
+  @Prop({ required: true, trim: true })
+  stuff: number;
+
+  @Prop({ required: true, trim: true })
+  gross: number;
+
   @Prop({ type: Types.ObjectId, ref: 'Employe' })
   employee: string;
 }
