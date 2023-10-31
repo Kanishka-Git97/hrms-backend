@@ -18,6 +18,10 @@ export class PaycheckService {
     paycheck.amount = body.amount;
     paycheck.deduction = body.deduction;
     paycheck.employee = body.employee;
+    paycheck.others = body.others;
+    paycheck.installment = body.installment;
+    paycheck.stuff = body.stuff;
+    paycheck.gross = body.gross;
 
     return await paycheck.save();
   }
